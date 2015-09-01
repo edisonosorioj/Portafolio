@@ -70,8 +70,10 @@
 
 .Header-image:hover{
 	-webkit-transition: 1s;
+	-moz-transition: 1s;
 	border-color: orange;
 	-webkit-transform: rotateY(360deg);
+	-moz-transform: rotateY(360deg);
 
 }
 
