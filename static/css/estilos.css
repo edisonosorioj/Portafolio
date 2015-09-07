@@ -108,11 +108,12 @@
 }
 
 .know{
+	background: rgba(255,165,0,0.5);
 	border-radius: .5em;
-	background: rgba(255,255,255,0.5);
+	color: black;
 }
-/*WORK*/
 
+/*WORK*/
 
 .Work{
 	margin-top: 2em;
