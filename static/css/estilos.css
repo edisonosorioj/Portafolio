@@ -71,7 +71,7 @@
 .Header-image:hover{
 	-webkit-transition: 1s;
 	border-color: orange;
-	-webkit-transform: rotateY(360deg);
+	/*-webkit-transform: rotateY(360deg);*/
 
 }
 
@@ -125,6 +125,10 @@
 	margin-right: 1.8em;
 	margin-bottom: 1.8em;
 
+}
+
+.Work-image{
+	border-radius: 5px
 }
 
 .Work-imageContainer{

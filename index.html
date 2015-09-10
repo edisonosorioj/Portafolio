@@ -5,8 +5,8 @@
            <meta charset='UTF-8' />
            <meta name="viewport" content="width:device-width,maximum-scale=1"/>
            <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
-           <link rel="stylesheet" type="text/css" href="../static/css/estilos.css">
-           <link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
+           <link rel="stylesheet" type="text/css" href="static/css/estilos.css">
+           <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
            
       </head>
 
@@ -29,7 +29,7 @@
       			</ul>
       		</nav>
       		<figure class="Header-imageContainer">
-      			<img src="../image/avatar.jpg" alt="Imagen personal"  class="Header-image"/>
+      			<img src="image/avatar.jpg" alt="Imagen personal"  class="Header-image"/>
       			<figcaption class="Header-imageDescription">
       				<a class="Header-link" href="http://twitter.com/EdisonOsorio7" target='_black'>@EdisonOsorio7</a>
       			</figcaption>
@@ -48,7 +48,6 @@
                   <a class="Profile-link know">JScript</a>
                   <a class="Profile-link know">JQuery</a>
                   <a class="Profile-link know">PHP(Básico)</a>
-                  <!-- <a class="Profile-link" href="http://github.com/edisonosorioj" target='_black'>Edison Osorio</a> -->
                   </div>
       	</section>
       	<section id="trabajo" class="Work">
@@ -57,37 +56,37 @@
                   </div>
                   <article class="Work-item">
                         <figure class="Work-imageContainer">
-                              <img class="Work-image" src="../image/proyecto.jpg" alt="Es la descripción de mi Imagen">
+                              <img class="Work-image" src="image/proyecto.jpg" alt="Es la descripción de mi Imagen">
                               <figcaption class="Work-description">Webside de Mejorando.la</figcaption>
                         </figure>
                   </article>
                   <article class="Work-item">
                         <figure class="Work-imageContainer">
-                              <img class="Work-image" src="../image/proyecto2.jpg" alt="Es la descripción de mi Imagen">
+                              <img class="Work-image" src="image/proyecto2.jpg" alt="Es la descripción de mi Imagen">
                               <figcaption class="Work-description">Webside de Mejorando.la</figcaption>
                         </figure>
                   </article>
                   <article class="Work-item">
                         <figure class="Work-imageContainer">
-                              <img class="Work-image" src="../image/proyecto2.jpg" alt="Es la descripción de mi Imagen">
+                              <img class="Work-image" src="image/proyecto2.jpg" alt="Es la descripción de mi Imagen">
                               <figcaption class="Work-description">Webside de Mejorando.la</figcaption>
                         </figure>
                   </article>
                   <article class="Work-item">
                         <figure class="Work-imageContainer">
-                              <img class="Work-image" src="../image/proyecto.jpg" alt="Es la descripción de mi Imagen">
+                              <img class="Work-image" src="image/proyecto.jpg" alt="Es la descripción de mi Imagen">
                               <figcaption class="Work-description">Webside de Mejorando.la</figcaption>
                         </figure>
                   </article>
                   <article class="Work-item">
                         <figure class="Work-imageContainer">
-                              <img class="Work-image" src="../image/proyecto.jpg" alt="Es la descripción de mi Imagen">
+                              <img class="Work-image" src="image/proyecto.jpg" alt="Es la descripción de mi Imagen">
                               <figcaption class="Work-description">Webside de Mejorando.la</figcaption>
                         </figure>
                   </article>
                   <article class="Work-item">
                         <figure class="Work-imageContainer">
-                              <img class="Work-image" src="../image/proyecto2.jpg" alt="Es la descripción de mi Imagen">
+                              <img class="Work-image" src="image/proyecto2.jpg" alt="Es la descripción de mi Imagen">
                               <figcaption class="Work-description">Webside de Mejorando.la</figcaption>
                         </figure>
                   </article>
@@ -97,10 +96,10 @@
                   <h3 class="Footer-title">Contacto</h3>
                   <p class="Footer-description">Tienes una sugerencia o quieres trabajar conmigo. Contactame con este formulario</p>
                   </div>
-                        <form class="Footer-form">
-                        <input class="Footer-formInput" type="text" placeholder="Nombre" />
-                        <input class="Footer-formInput" type="email" placeholder="Email"/>
-                        <textarea placeholder="Motivo" class="Footer-textarea"></textarea>
+                        <form class="Footer-form" method="post" action="php/email.php" onsubmit="return send();">
+                        <input class="Footer-formInput" type="text" name="nombre" placeholder="Nombre" />
+                        <input class="Footer-formInput" type="email" name="email" placeholder="Email"/>
+                        <textarea placeholder="Motivo" class="Footer-textarea" name="motivo"></textarea>
                         <button type="submit" class="Footer-button"> Contactarme </button>
                   </form>
       	</footer>
