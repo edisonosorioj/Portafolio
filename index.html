@@ -6,8 +6,7 @@
            <meta name="viewport" content="width:device-width,maximum-scale=1"/>
            <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
            <link rel="stylesheet" type="text/css" href="static/css/estilos.css">
-           <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
-           
+           <link rel="stylesheet" type="text/css" href="static/css/normalize.css">           
       </head>
 
       <body>
@@ -96,12 +95,14 @@
                   <h3 class="Footer-title">Contacto</h3>
                   <p class="Footer-description">Tienes una sugerencia o quieres trabajar conmigo. Contactame con este formulario</p>
                   </div>
-                        <form class="Footer-form" method="post" action="php/email.php" onsubmit="return send();">
-                        <input class="Footer-formInput" type="text" name="nombre" placeholder="Nombre" />
-                        <input class="Footer-formInput" type="email" name="email" placeholder="Email"/>
-                        <textarea placeholder="Motivo" class="Footer-textarea" name="motivo"></textarea>
+                        <form class="Footer-form" method="post" action="php/email.php" name="formu">
+                        <input class="Footer-formInput" type="text" name="nombre" placeholder="Nombre" value="" />
+                        <input class="Footer-formInput" type="email" name="email" placeholder="Email" value="" />
+                        <textarea placeholder="Motivo" class="Footer-textarea" name="motivo" value=""></textarea>
                         <button type="submit" class="Footer-button"> Contactarme </button>
                   </form>
       	</footer>
+            <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+            <script src="email.js"></script>
       </body>
   </html>

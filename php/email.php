@@ -1,22 +1,27 @@
 <?php
 
-$to = "edisonsorioj@gmail.com";
-$subject = "Contacto por Página";
-$user = $_POST["nombre"];
-$motivo = $_POST["motivo"];
-$txt = "Hola soy " . $user .  "\r\n" . $motivo;
-$headers = "From: " . $_POST["email"];
+if (isset($_POST['email'])) {
+	$email_to = "edisonosorioj@gmail.com";
+	$email_subject = "Contacto desde el sitio Web";
 
-mail($to,$subject,$txt,$headers);
-
-function send(){
-	if(mail() == true){
-		echo '<script language="javascript">alert("Mensaje enviado correctamente!");</script>';
+	if(!isset($_POST['nombre']) || !isset($_POST['email']) || !isset($_POST['motivo'])){
+		echo "<b>Ocurrío un error y el formulario no ha sido enviado.</b><br />";
+		echo "Por favor, vuelva atrás y verifique la información ingresada<br />";
+		die();
 	}
-	else 
-		echo '<script language="javascript">alert("Intentalo de nuevo! Algo no se ingreso correctamente");</script>';
-}
 
-return send();
+	$email_message = "Detalles de formulario de contacto:\n\n";
+	$email_message = "Nombre: " . $_POST['nombre'] . "\n";
+	$email_message = "Email: " . $_POST['email'] . "\n";
+	$email_message = "Motivo: " . $_POST['motivo'] . "\n";
+
+	$headers = 'From:'.$email_from."\r\n".
+	'Reply-To:'.$email_from."\r\n" .
+	'X-Mailer: PHP/' . phpversion();
+	@mail($email_to,$email_subject,$email_message,$headers);
+
+echo "El formulario se ha enviado con éxito";
+
+}
 
 ?>
