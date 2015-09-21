@@ -42,8 +42,15 @@
 .MainMenu-link{
 	color: #00DBFF;
 	line-height: 3.75em;
-	margin-right: 1.5em;
+	margin: 0;
+	padding: .5em 1.5em;
 	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-mz-transition: 0.5s;
+}
+
+.MainMenu-link:hover{
+	border-top: 1px solid white;
 } 
 
 /*HEADER*/
