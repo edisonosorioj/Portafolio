@@ -17,7 +17,7 @@ $contenido = "$nombre a enviado un mensaje desde el sitio Website\n"
 
 if (mail($email_to, $asunto ,$contenido ,$cabeceras )) {
  
-die("Gracias, su mensaje se envio correctamente.<br /><a href='index.html'>Volver</a>");
+die("Gracias, su mensaje se envio correctamente.<br /><a href='../index.html'>Volver</a>");
 }else{
  
 die("Error: Su informaci&oacute;n no pudo ser enviada, 
@@ -25,3 +25,4 @@ die("Error: Su informaci&oacute;n no pudo ser enviada,
 }
 
 ?>
+
