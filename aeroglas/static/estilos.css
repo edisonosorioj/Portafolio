@@ -18,6 +18,13 @@
 	margin: 0 auto;
 }
 
+/*BODY*/
+
+body{
+	background: #A0A0A0;
+}
+
+
 /*MENU*/
 
 .MainMenu{
@@ -56,14 +63,14 @@
 /*HEADER*/
 
 .Header{
-	margin-top:  3.75em;
+	margin-top:  1em;
 	background-repeat: no-repeat;
 	background-image: url('../image/portada.jpg');
 	background-position: center;
 	background-size: cover;
 	color: white;
 	text-align: center;
-	padding: 1em 0;
+	height: 20em;
 }
 
 .Header-imageContainer{

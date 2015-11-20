@@ -6,33 +6,33 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="image/fav.png">
 	<link rel="stylesheet" type="text/css" href="static/estilos.css">
-	<link rel="stylesheet" type="text/css" href="static/normalize.css">   
+	<link rel="stylesheet" type="text/css" href="static/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
 </head>
 <body>
       <header class="Header">
-            <h1>EN CONSTRUCCIÓN</h1>
-<!--             <figure>
-                  <img src="image/aeroglas_inicio.jpg">
-            </figure> -->
-		<!-- <img src="">
-		<nav class="MainMenu">
-			<ul class="MainMenu-list">
-				<li class="MainMenu-item">
-					<a href="#yo" class="MainMenu-link">Yo</a>
-				</li>
-				<li class="MainMenu-item">
-					<a href="#perfil" class="MainMenu-link">Perfil</a>
-				</li>
-				<li class="MainMenu-item">
-					<a href="#trabajo" class="MainMenu-link">Trabajo</a>
-				</li>
-				<li class="MainMenu-item">
-					<a href="#contacto" class="MainMenu-link">Contacto</a>
-				</li>
-			</ul>
-		</nav> -->
+
 	</header>
 	
-	<section></section>
+	<section class="Profile">
+            <div class="os-phrases" id="os-phrases">
+				<h2>Proximamente</h2>
+				<h2>tendremos nuestra web</h2>
+				<h2>con la mejor información</h2>
+				<h2>de Aeromodelismo</h2>
+				<h2>Nuestros Trabajos</h2>
+				<h2>Nuestros Servicios</h2>
+				<h2></h2>
+				<h2> AEROGLASS</h2>
+			</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/jquery.lettering.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering(); 
+		})
+	</script>
 </body>
 </html>
