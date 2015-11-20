@@ -58,9 +58,10 @@
 .Header{
 	margin-top:  3.75em;
 	background-repeat: no-repeat;
-	background-image: url('../../image/portada.jpg');
+	background-image: url('../image/portada.jpg');
 	background-position: center;
 	background-size: cover;
+	color: white;
 	text-align: center;
 	padding: 1em 0;
 }
