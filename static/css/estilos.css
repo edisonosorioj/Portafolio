@@ -45,8 +45,8 @@
 	margin: 0;
 	padding: .5em 1.5em;
 	text-decoration: none;
-	-webkit-transition: 0.5s;
-	-mz-transition: 0.5s;
+	-webkit-transition: 0.1s;
+	-mz-transition: 0.1s;
 }
 
 .MainMenu-link:hover{
