@@ -4,31 +4,65 @@
 	<meta charset='UTF-8' />
 	<meta name="viewport" content="width:device-width,maximum-scale=1"/>
 	<link rel="icon" href="image/fav.png">
-	<link rel="stylesheet" type="text/css" href="static/estilos.css">
-	<link rel="stylesheet" type="text/css" href="static/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	 <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+  <link rel="stylesheet" href="css/1140.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	  $(window).load(function() {
+	    $('.flexslider').flexslider({
+	    	controlsContainer: '.flex-container'
+	    });
+	  });
+	</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-718520-23']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </head>
 <body>
       <header class="Header">
-
 	</header>
-	
-	<section class="Profile">
-		<script>
-		Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
-		Galleria.run('#galleria', {
-		 facebook: 'album:143929452292750',
-		 width: 745,
-		 height: 550,
-		 lightbox: true});
-		</script>
-		<div id="galleria"></div>
-            
-	</section>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-	<script src="js/galleria/galleria-1.4.2.min.js"></script>
-	<script src="js/galleria/plugins/facebook/galleria.facebook.js"></script>
-</body>
+	    <div id="main" class="row">
 
-</div>
+	<div class="onecol"></div> 
+	   
+		<div id="slider" class="tencol">
+
+			<div class="flex-container">
+				<div class="flexslider">
+					<ul class="slides">
+						<li><img src="img/img1.jpg"/></li>
+						<li><img src="img/img2.jpg"/></li>
+						<li><img src="img/img3.jpg"/></li>
+						<li><img src="img/img4.jpg"/></li>
+						<li><img src="img/img5.jpg"/></li>
+					</ul>
+				</div>
+			</div><!-- .flex-container -->
+
+		</div>
+	
+	<div class="onecol last"></div>
+
+
+
 </body>
 </html>
