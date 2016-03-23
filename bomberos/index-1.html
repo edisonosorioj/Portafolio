@@ -6,6 +6,11 @@
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/grid.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery-ui-1.8.5.custom.css" type="text/css" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.5.custom.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +22,7 @@
 					<ul>
 						<li><a href="index.html">Inicio</a></li>
 						<li><a href="index-4.html">Historia</a></li>
-						<li><a href="#">Eventos</a></li>
+						<li><a href="index-3.html">Eventos</a></li>
 						<li><a href="index-1.html" class="current">Portafolio</a></li>
 						<li><a href="#">Contacto</a></li>
 					</ul>
@@ -100,7 +105,25 @@
 				</div>
 			</div>
 		</div>
-		
+				<div class="bottom" id='contacto'>
+			<div class="container">
+				<div class="wrapper">
+					<div class="grid8 first">
+						<h3>Contactenos</h3>
+						<p>CUERPO DE BOMBEROS VOLUNTARIOS DEL MUNICIPIO DE MARINILLA<br />
+							NIT: 811.013.069-6<br />
+							CALLE 27 Nº 26-15<br />
+							TELEFONO 548 2750 - 548 3975<br />
+							FAX 5484388
+						</p>
+					</div>
+					<div class="grid3">
+						<div id="datepicker"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	</section>
 	<footer>
 		<div class="container">
@@ -112,5 +135,20 @@
 			</div>
 		</div>
 	</footer>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('.pics').cycle({
+				fx: 'toss',
+				next:	 '#next', 
+				prev:	 '#prev' 
+			});
+			
+			// Datepicker
+			$('#datepicker').datepicker({
+				inline: true
+			});
+
+		});
+	</script>
 </body>
 </html>

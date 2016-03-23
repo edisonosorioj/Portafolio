@@ -6,6 +6,11 @@
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/grid.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery-ui-1.8.5.custom.css" type="text/css" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.5.custom.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +22,7 @@
 					<ul>
 						<li><a href="index.html">Inicio</a></li>
 						<li><a href="index-4.html" class="current">Historia</a></li>
-						<li><a href="#">Eventos</a></li>
+						<li><a href="index-3.html">Eventos</a></li>
 						<li><a href="index-1.html">Portafolio</a></li>
 						<li><a href="#">Contacto</a></li>
 					</ul>
@@ -55,6 +60,24 @@
 				<p>En junio del 2004 el Bombero Juan Manuel Díaz Ángel comandante de la brigada de Vestimundo Marinilla es nombrado por el consejo de oficiales como nuevo comandante y representante legal, el cual hace una reestructuración de todo el Cuerpo de Bomberos del Mpio, gestionando por muchos medios la forma de dotar la institución con nuevos equipos y herramientas para atender las múltiples emergencias que se han presentado; entre estas gestiones y gracias al apoyo de la gobernación de Antioquia, al Dr. Pedro Jiménez representante a la cámara, al Dr. Carlos Mario Montoya director del Dapard, al concejal Manuel García, al ex-concejal Gildardo García y la Admón. Mpal de Marinilla la consecución de una maquina de extinción rápida de incendios, con la cual esperamos atender en una forma mas efectiva las emergencias que se presenten en la localidad y además apoyar a los Municipio vecinos.</p>
 			</div>
 		</div>
+		<div class="bottom" id='contacto'>
+			<div class="container">
+				<div class="wrapper">
+					<div class="grid8 first">
+						<h3>Contactenos</h3>
+						<p>CUERPO DE BOMBEROS VOLUNTARIOS DEL MUNICIPIO DE MARINILLA<br />
+							NIT: 811.013.069-6<br />
+							CALLE 27 Nº 26-15<br />
+							TELEFONO 548 2750 - 548 3975<br />
+							FAX 5484388
+						</p>
+					</div>
+					<div class="grid3">
+						<div id="datepicker"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<footer>
 		<div class="container">
@@ -66,5 +89,20 @@
 			</div>
 		</div>
 	</footer>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('.pics').cycle({
+				fx: 'toss',
+				next:	 '#next', 
+				prev:	 '#prev' 
+			});
+			
+			// Datepicker
+			$('#datepicker').datepicker({
+				inline: true
+			});
+
+		});
+	</script>
 </body>
 </html>
