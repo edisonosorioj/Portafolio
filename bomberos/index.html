@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bomberos Marinilla</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery-ui-1.8.5.custom.css" type="text/css" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.5.custom.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="container">
+				<div class="wrapper">
+					<h1><a href="index.html"><strong>Bomberos</strong> Marinilla</a></h1>
+					<ul>
+						<li><a href="index.html" class="current">Inicio</a></li>
+						<li><a href="index-4.html">Historia</a></li>
+						<li><a href="#">Eventos</a></li>
+						<li><a href="index-1.html">Portafolio</a></li>
+						<li><a href="#contacto">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section class="adv-content">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li>Inicio</li>
+				</ul>
+				<p class='tx1'>Línea de Emergencias <strong>119</strong></p>
+			</div>
+	</header>
+	<section id="content">
+		<div class="top">
+			<div class="container">
+				<div class="clearfix">
+					<section id="gallery">
+						<div class="pics">
+							<img src="images/slide1.jpg" alt="" width="495" height="329">
+							<img src="images/slide3.jpg" alt="" width="495" height="329">
+							<img src="images/slide2.jpg" alt="" width="495" height="329">
+							<img src="images/slide4.jpg" alt="" width="495" height="329">
+							<img src="images/slide5.jpg" alt="" width="495" height="329">
+						</div>
+						<a href="#" id="prev"></a>
+						<a href="#" id="next"></a>
+					</section>
+					<section id="intro">
+						<div class="inner">
+							<h2>CUERPO DE <br />BOMBEROS VOLUNTARIOS<span> MARINILLA</span></h2>
+							<p>En el año 1997 el bombero de Rionegro Rolando Antonio García Gómez, vino al municipio de Marinilla trayendo en sus proyectos el conformar un cuerpo de bomberos voluntarios, dicha idea comenzó a funcionar en sus compañeros de trabajo, ya que Marinilla tan grande y extenso en población no tenía ningún cuerpo de socorro constituido legalmente.</p>
+							<a href="index-4.html" class="extra-button">Leer más</a>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="middle">
+			<div class="container">
+				<div class="wrapper">
+					<div class="grid9">
+						<h2>Visión</h2>
+						<p align="justify">En el 2020, seremos una institución reconocida a nivel local y regional por ser líderes en el conocimiento, la reducción y el manejo del riesgo de desastres como primera medida para la protección de la vida, bienes y el medio ambiente. Seremos una escuela de formación de alta calidad, reconocida a nivel nacional, enfocada en la preparación de bomberos y brigadas industriales en el riesgo de incendios y calamidades conexas.</p>
+						<h2>Misión</h2>
+						<p align="justify">El Cuerpo de Bomberos Voluntarios del Municipio de Marinilla, Antioquia es una organización comprometida con la gestión integral del riesgo contra incendios, los preparativos y atención de rescate en todas sus modalidades y la atención de incidentes con materiales peligrosos, de desastres naturales y tecnológicos, de manera permanente, oportuna y eficiente, con el objeto de brindar seguridad y bienestar a la sociedad salvaguardando vidas, bienes y el medio ambiente.<br />
+						Mantener un eficiente programa de capacitaciones, entrenamiento y desarrollo profesional de cuerpo de bomberos mediante la formación de los integrantes de nuestra institución, con la finalidad de lograr un alto nivel de preparación técnica.<br />
+						Direccionar las empresas vecinas en la formación de sus brigadas, proporcionándoles unas bases firmes para la prevención y control de emergencias.<br />
+						Ensamblar, comercializar, inspeccionar, y recargar equipos de control de incendios extintores confiables y seguros con un servicio enfocado en el cliente con el fin de ganar su fidelidad.
+						</p>
+						<section class="images">
+							<figure><img src="images/1page-img1.jpg" alt=""></figure>
+							<figure><img src="images/1page-img2.jpg" alt=""></figure>
+							<figure><img src="images/1page-img3.jpg" alt=""></figure>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom" id='contacto'>
+			<div class="container">
+				<div class="wrapper">
+					<div class="grid8 first">
+						<h3>Contactenos</h3>
+						<p>CUERPO DE BOMBEROS VOLUNTARIOS DEL MUNICIPIO DE MARINILLA<br />
+							NIT: 811.013.069-6<br />
+							CALLE 27 Nº 26-15<br />
+							TELEFONO 548 2750 - 548 3975<br />
+							FAX 5484388
+						</p>
+					</div>
+					<div class="grid3">
+						<div id="datepicker"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="wrapper">
+				<div class="copy">Developed for Edison Osorio 2016</div>
+				<div class="grid7">
+					<p align="center">Contador de Visitas:<br /> <script type="text/javascript" src="http://counter5.fcs.ovh/private/countertab.js?c=6001956140916d760d0b48313e38bb86"></script></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.pics').cycle({
+				fx: 'toss',
+				next:	 '#next', 
+				prev:	 '#prev' 
+			});
+			
+			// Datepicker
+			$('#datepicker').datepicker({
+				inline: true
+			});
+
+		});
+	</script>
+</body>
+</html>
