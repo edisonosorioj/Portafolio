@@ -106,7 +106,7 @@ header .adv-content {overflow:hidden;background:#f9f9f9;padding:10px 0 8px 0}
 			#next {position:absolute;left:495px;top:174px;z-index:1;background:url(../images/next.png) no-repeat 0 0;width:83px;height:45px}
 	#intro {float:left;width:396px}
 		#intro .inner {padding:24px 0 0 14px}
-			#intro h2 {font-size:48px;color:#06cbe2;line-height:40px;font-family:'CalibriBold';font-weight:normal;margin-bottom:25px}
+			#intro h2 {font-size:48px;color:#E11C06;line-height:40px;font-family:'CalibriBold';font-weight:normal;margin-bottom:25px}
 				#intro h2 span {font-family:'ColaborateThinRegular';color:#303030;display:block}
 			#intro .extra-button {display:inline-block;background:url(../images/extra-button.jpg) no-repeat 0 0;width:195px;height:73px;margin:15px 0 0 -10px;line-height:49px;font-size:18px;color:#fff;text-decoration:none;font-weight:bold;text-indent:30px;text-shadow:1px 1px 0 #a61607}
 			#intro .extra-button:hover {text-shadow:2px 2px 0 #a61607}
@@ -120,6 +120,7 @@ header .adv-content {overflow:hidden;background:#f9f9f9;padding:10px 0 8px 0}
 		.images figure {border:5px solid #fff;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;float:left;box-shadow:0 0 5px rgba(0, 0, 0, .1);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .1);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .1);margin:5px 0 0 16px}
 		.images figure:first-child {margin-left:0}
 			.images figure img:hover {opacity:.7;-moz-transition:all 0.2s ease-out; /* FF3.7+ */ -o-transition:all 0.2s ease-out; /* Opera 10.5 */ -webkit-transition:all 0.2s ease-out; /* Saf3.2+, Chrome */ }
+	#content h2 {color:#E11C06}
 	#content .bottom h3 {color:#fff}
 	#content .bottom a.alt {color:#06cbe2}
 	.list1 li {padding-bottom:4px}
