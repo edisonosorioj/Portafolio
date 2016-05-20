@@ -241,8 +241,8 @@ h1 {
 header h1 a {
 	display: block;
 	overflow: hidden;
-	width: 59px;
-	height: 34px;
+	width: 100px;
+	height: 58px;
 	text-indent: -999px;
 	transition: 0s ease;
 	-o-transition: 0s ease;
