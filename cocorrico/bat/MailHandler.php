@@ -14,18 +14,18 @@
 	}else{
 		$headers = '';
 	}
-	if($_POST['state']!='nope'){		
-		$messageBody .= '<p>State: ' . $_POST['state'] . '</p>' . "\n";
-		$messageBody .= '<br>' . "\n";
-	}
+	// if($_POST['state']!='nope'){		
+	// 	$messageBody .= '<p>State: ' . $_POST['state'] . '</p>' . "\n";
+	// 	$messageBody .= '<br>' . "\n";
+	// }
 	if($_POST['phone']!='nope'){		
 		$messageBody .= '<p>Phone Number: ' . $_POST['phone'] . '</p>' . "\n";
 		$messageBody .= '<br>' . "\n";
 	}	
-	if($_POST['fax']!='nope'){		
-		$messageBody .= '<p>Fax Number: ' . $_POST['fax'] . '</p>' . "\n";
-		$messageBody .= '<br>' . "\n";
-	}
+	// if($_POST['fax']!='nope'){		
+	// 	$messageBody .= '<p>Fax Number: ' . $_POST['fax'] . '</p>' . "\n";
+	// 	$messageBody .= '<br>' . "\n";
+	// }
 	if($_POST['message']!='nope'){
 		$messageBody .= '<p>Message: ' . $_POST['message'] . '</p>' . "\n";
 	}
