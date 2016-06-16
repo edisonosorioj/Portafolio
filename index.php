@@ -1,3 +1,11 @@
+<?php
+
+include 'php/conexion.php';
+
+$result = mysqli_query($conn, "SELECT know FROM know"); 
+
+?>
+
 <!DOCTYPE html>
   <html lang='es'>
       <head>
@@ -43,11 +51,10 @@
                   <p class="Profile-description">
                         Hola llegaste a mi portafolio. Mis conocimientos:
                   </p>
-                  <a class="Profile-link know">Html5</a>
-                  <a class="Profile-link know">Css3 - Stylus</a>
-                  <a class="Profile-link know">JScript - JQuery</a>
-                  <a class="Profile-link know">PHP(Básico)</a>
-                  <a class="Profile-link know">Bases de Datos</a>
+                  <?php
+                  while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) { 
+                        ?>
+                  <a class="Profile-link know"><?php printf($row["know"]);}?></a>
                   </div>
       	</section>
       	<section id="trabajo" class="Work">
