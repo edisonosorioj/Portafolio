@@ -85,7 +85,7 @@ $result = mysqli_query($conn, "SELECT know FROM know");
                   <article class="Work-item">
                         <figure class="Work-imageContainer">
                               <a href="http://aeroglassrc.com/">
-                                    <img class="Work-image" src="aeroglas/images/aeroglas_inicio.jpg" alt="Aeromodelismo">
+                                    <img class="Work-image" src="image/aeroglas_inicio.jpg" alt="Aeromodelismo">
                               </a>
                               <figcaption class="Work-description">
                                     Aeroglas RC - Aeromodelismo
