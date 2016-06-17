@@ -55,6 +55,9 @@ $result = mysqli_query($conn, "SELECT know FROM know");
                   while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) { 
                         ?>
                   <a class="Profile-link know"><?php printf($row["know"]);}?></a>
+                  <a href="crear.php">Cr</a>
+                  <a href="editar.php">Ed</a>
+                  <a href="eliminar.php">El</a>
                   </div>
       	</section>
       	<section id="trabajo" class="Work">
