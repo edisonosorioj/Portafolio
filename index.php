@@ -15,7 +15,9 @@ $result = mysqli_query($conn, "SELECT know FROM know");
            <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
            <link rel="icon" href="image/fav.png">
            <link rel="stylesheet" type="text/css" href="static/css/estilos.css">
-           <link rel="stylesheet" type="text/css" href="static/css/normalize.css">         
+           <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+           <script src="jquery-1.3.2.min.js" type="text/javascript"></script>  
+           <script src="static/js/edit.js"></script>
       </head>
 
       <body>
@@ -54,7 +56,7 @@ $result = mysqli_query($conn, "SELECT know FROM know");
                   <?php
                   while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) { 
                         ?>
-                  <a class="Profile-link know"><?php printf($row["know"]);}?></a>
+                  <a class="Profile-link know" href='action.php'><?php printf($row["know"]);}?></a>
                   <a href="crear.php">Cr</a>
                   <a href="editar.php">Ed</a>
                   <a href="eliminar.php">El</a>
