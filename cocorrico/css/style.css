@@ -391,6 +391,14 @@ header h1 a img {
 	font: 18px/19px 'Dosis', sans-serif;
 	color: #233c4c;
 	margin-bottom: 7px;
+	margin-top: 5px;
+}
+
+.text2 {
+	font: 25px/19px 'Dosis', sans-serif;
+	color: #233c4c;
+	margin-bottom: 7px;
+	margin-top: 5px;
 }
 
 .box .text1 {
