@@ -1,6 +1,6 @@
 <?php
 // 127.0.0.1
-$dbhostname = '127.0.0.1';
+$dbhostname = 'localhost';
 $dbusername = 'root';
 $dbpassword = '';
 $DB = "portafolio";

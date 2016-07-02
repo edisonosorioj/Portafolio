@@ -67,25 +67,25 @@
     </div>
     <div class="grid_9">
       <h3 class="head2">Formulario de Contácto</h3>
-      <form id="form">
+      <form id="form" method="post" action="save.php">
       <div class="success_wrapper">
       <div class="success">Email enviado!<br>
       <strong>Nos comunicaremos pronto.</strong> </div></div>
       <fieldset>
       <label class="name">
-      <input type="text" value="Nombre:">
+      <input type="text" name="nombre" value="Nombre:">
       <br class="clear">
       <span class="error error-empty">*No es un nombre válido.</span><span class="empty error-empty">*Requerido.</span> </label>
       <label class="email">
-      <input type="text" value="E-mail:">
+      <input type="text" name="correo" value="E-mail:">
       <br class="clear">
       <span class="error error-empty">*No es un correo válido.</span><span class="empty error-empty">*Requerido.</span> </label>
       <label class="phone">
-      <input type="tel" value="Tel:">
+      <input type="tel" name="telefono" value="Tel:">
       <br class="clear">
       <span class="error error-empty">*No es un telefono válido.</span><span class="empty error-empty">*Requerido.</span> </label>
       <label class="message">
-      <textarea>Mensaje:</textarea>
+      <textarea name="mensaje">Mensaje:</textarea>
       <br class="clear">
       <span class="error">*El mensaje es muy corto.</span> <span class="empty">*Requerido.</span> </label>
       <div class="clear"></div>
