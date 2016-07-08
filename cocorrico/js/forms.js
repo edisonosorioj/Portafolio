@@ -18,10 +18,10 @@
 					controls:'a[data-type=reset],a[data-type=submit]',
 					validate:true,
 					rx:{
-						".name":{rx:/^[a-zA-Z'][a-zA-Z-' ]+[a-zA-Z']?$/,target:'input'},
-						".email":{rx:/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i,target:'input'},
-						".phone":{rx:/^\+?(\d[\d\-\+\(\) ]{5,}\d$)/,target:'input'},
-						".message":{rx:/.{20}/,target:'textarea'}
+						".nombre":{rx:/^[a-zA-Z'][a-zA-Z-' ]+[a-zA-Z']?$/,target:'input'},
+						".correo":{rx:/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i,target:'input'},
+						".telefono":{rx:/^\+?(\d[\d\-\+\(\) ]{5,}\d$)/,target:'input'},
+						".mensaje":{rx:/.{20}/,target:'textarea'}
 					},
 					preFu:function(){
 						_.labels.each(function(){
@@ -100,11 +100,11 @@
 								type: "POST",
 								url:_.mailHandlerURL,
 								data:{
-									name:_.getValFromLabel($('.name',_.form)),
-									email:_.getValFromLabel($('.email',_.form)),
-									phone:_.getValFromLabel($('.phone',_.form)),
-									message:_.getValFromLabel($('.message',_.form)),
-									owner_email:_.ownerEmail,
+									nombre:_.getValFromLabel($('.nombre',_.form)),
+									correo:_.getValFromLabel($('.correo',_.form)),
+									telefono:_.getValFromLabel($('.telefono',_.form)),
+									mensaje:_.getValFromLabel($('.mensaje',_.form)),
+									owner_correo:_.ownerCorreo,
 									stripHTML:_.stripHTML
 								},
 								success: function(){
@@ -178,6 +178,6 @@
 })(jQuery)
 $(window).load(function(){
 	$('#form').forms({
-		ownerEmail:'#'
+		ownerCorreo:'cocorrico1972@gmail.com'
 	})
 })
