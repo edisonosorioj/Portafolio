@@ -4,10 +4,12 @@ class conection{
 
 	function conex(){
 
-	  // $dbserver = "172.31.36.160";
-	  $dbserver = "127.0.0.1";
+	  $dbserver = "52.25.205.86";
+	  // $dbserver = "127.0.0.1";
+	  // $dbserver = "localhost";
 	  $dbuser = "root";
 	  $password = "qwer1234";
+	  // $password = "";
 	  $dbname = "cocorrico";
 	 
 	  $conex = new mysqli($dbserver, $dbuser, $password, $dbname);
