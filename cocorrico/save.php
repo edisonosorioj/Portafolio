@@ -11,7 +11,7 @@ $result = $conex->conex();
 	$telefono 	=	$_POST['telefono'];
 	$mensaje 	=	$_POST['mensaje'];
 
-	$query = mysqli_query($result,"INSERT INTO contactos (nombre, correo, telefono, mensaje) VALUES ('$nombre', '$correo', '$telefono', '$mensaje');");
+	$query = mysqli_query($result,"INSERT INTO contactos (nombre, correo, telefono, mensaje, fecha) VALUES ('$nombre', '$correo', '$telefono', '$mensaje', DATE(NOW()));");
 	
 ?>
 <html>
