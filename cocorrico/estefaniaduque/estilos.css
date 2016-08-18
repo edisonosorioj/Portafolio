@@ -1,0 +1,10 @@
+.table_result{
+	border: 2px solid #000000;
+	text-align: center;
+}
+
+.row_result{
+	border: 2px solid #000000;
+	background: #8caae6;
+	font-weight: bold;
+}
